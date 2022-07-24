@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste-flex-box</title>
+    
+    <style>
+        @media screen and (min-width: 500px) {
+        
+            .body-container{
+            background-color: rgb(177, 177, 177);
+            margin: 0%;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .align-_blateral_navegaca-conteudo{
+            align-items: stretch;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-grow: 3;
+            /* border: 5px solid black; */
+            min-width: 100%;
+        }
+
+        .cabecalho-container{
+            display: flex;
+            flex-direction: column;
+            background-color: darkcyan;
+            /* border: 5px solid black ; */
+            padding: 3px 0px 100px 0px;
+            /* margin: 0px; */
+            text-align: center;
+            min-width: 100%;
+            
+        }
+
+        h1, h2, h3, p{
+            color: rgb(246, 246, 246);
+            padding: 5px;
+        }
+
+        .navegacao-container{
+            display: flex;
+            float:left;
+            flex-direction: column;
+            background-color: orange;
+            /* border: 5px solid black ; */
+            /* margin: 5px; */
+            text-align: center;
+            width: 200px;
+
+        }
+
+        .barra_lateral-container{
+            display: flex;
+            float:right;
+            flex-direction: column;
+            background-color: darkorange;
+            /* border: 5px solid black ; */
+            /* margin: 5px; */
+            text-align: center;
+            width: 200px;
+
+        }
+
+        .conteudo-container{
+            float:left;
+            flex-direction: column;
+            background-color: darkviolet;
+            /* border: 5px solid black ; */
+            /* margin: 0px; */
+            text-align: center;
+            min-width: 100px;
+        }
+
+        .roda_pe-container{
+            text-align: center ;
+            display: flex;
+            flex-direction: column;
+            background-color: darkseagreen;
+            /* border: 5px solid black ; */
+            /* margin: 5px; */
+            text-align: center;
+
+        }
+        }
+
+    @media screen and (max-width: 500px) {
+        
+        .body-container{
+            background-color: rgb(177, 177, 177);
+            margin: 0%;
+            flex-wrap: wrap;
+            align-items: stretch;
+        }
+
+        .align-_blateral_navegaca-conteudo{
+            align-items: stretch;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-grow: 3;
+        }
+
+        .cabecalho-container{
+            display: flex;
+            flex-direction: column;
+            background-color: darkcyan;
+            /* border: 5px solid black ; */
+            padding: 3px 0px 100px 0px;
+            /* margin: 0px; */
+            text-align: center;
+            
+        }
+
+        h1, h2, h3, p{
+            color: rgb(246, 246, 246);
+            padding: 5px;
+        }
+
+        .navegacao-container{
+            display: flex;
+            float:left;
+            flex-direction: column;
+            background-color: orange;
+            /* border: 5px solid black ; */
+            /* margin: 5px; */
+            text-align: center;
+        }
+
+        .barra_lateral-container{
+            display: flex;
+            float:right;
+            flex-direction: column;
+            background-color: darkorange;
+            /* border: 5px solid black ; */
+            /* margin: 5px; */
+            text-align: center;
+
+        }
+
+        .conteudo-container{
+            float:left;
+            flex-direction: column;
+            background-color: darkviolet;
+            /* border: 5px solid black ; */
+            /* margin: 0px; */
+            text-align: center;
+        }
+
+        .roda_pe-container{
+            text-align: center ;
+            display: flex;
+            flex-direction: column;
+            background-color: darkseagreen;
+            /* border: 5px solid black ; */
+            /* margin: 5px; */
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+<body class="body-container">
+    <header class="cabecalho-container">
+        <h1>Cabeçalho</h1>
+    </header>
+
+    <div class="align-_blateral_navegaca-conteudo">
+        <section class="navegacao-container">
+            <h3>Navegação</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet porro eaque quaerat ex, repellendus est numquam fugit quia iste totam maiores omnis aspernatur quibusdam, vero necessitatibus architecto debitis labore a.</p>
+        </section>
+
+        <article class="conteudo-container">
+            <h2>Conteúdo</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum enim aliquid hic eveniet, maxime nam ducimus facilis accusantium est ad fuga ex officiis eius nihil aliquam labore eos nemo sit.</P>
+            <h3>fase 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit neque itaque explicabo animi cum eaque velit quaerat optio eligendi repellendus impedit accusantium deleniti, ab sint repellat, ullam in suscipit eos.</p>
+        </article>
+
+        <section class="barra_lateral-container">
+            <h3>Barra_lateral</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga nisi asperiores magnam cumque ullam recusandae inventore maxime impedit sequi corrupti vitae repellat, obcaecati ex dicta aliquid labore animi repellendus modi?</p>
+        </section>
+    </div>
+
+    <footer class="roda_pe-container">
+        <aside>
+            <h3>Rodapé</h3>
+        </aside>
+    </footer>
+</body>
+</html>

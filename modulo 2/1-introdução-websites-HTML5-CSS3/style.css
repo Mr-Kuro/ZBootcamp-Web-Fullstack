@@ -1,0 +1,82 @@
+body {
+    background: rgb(210, 208, 208);
+    font-family: verdana;
+    width: 600px;
+    margin: auto;
+}
+
+#header_title {
+    border-radius: 50px;
+    border-color: black;
+    border-width: 20xp;
+    border-style:unset;
+    border-right-style:double ;
+}
+
+.photo {
+    margin-left: 25%;
+    border-radius: 50px;
+    border-color: black;
+    border-width: 5px;
+    border-style:unset;
+    border-left-style:dashed ;
+    border-right-style:double ;
+}
+
+#title, .subtitle, .post_title {
+    color: rgb(56, 16, 111);
+}
+
+#title {
+    margin-left: 12.5%;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration:double;
+    color: rgb(56, 16, 111);
+}
+
+.post_title {
+    font-size: 16px;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.post {
+    background: #fff;
+    padding: 10px;
+    /* border: 3px solid black; */
+    border: none;
+    margin-bottom: 15px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    /* border-bottom-left-radius:0 ;
+    border-top-right-radius: 0; */
+}
+
+.post_content {
+    text-transform: capitalize;
+    text-align:left;
+    
+}
+
+.post_image {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.contact_list {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.contact_list li a:hover {
+    color: rgb(241, 182, 73) ;
+    text-decoration:underline 2px ;
+}
