@@ -1,0 +1,59 @@
+-------------------------------------
+--------------------
+-------------------------------------
+
+terminal
+    npm init 
+        INICIA UM ARQUIVO json
+
+    npm install typescript
+        INSTALA UMA DEPENDÊNCIA TYPESCRIPT LOCAL
+
+    npm install lite-server
+        VAI PROCURAR UM INDEX.HTML PARA REALIZAR TESTES
+
+    tsc --init
+        inicializa um arquivo de configuração typescript
+
+    npm install typescript@latest -g.
+        Install typescript globally
+
+    npm run watch
+        inicia a compilação do ts para js que ele foi adicionado como script no package.json e inicia o lite-server
+
+    npm run start
+        atualiza os browsers quando há mudançãs nos scripts
+
+
+
+-------------------------------------
+--------------------
+-------------------------------------
+
+files
+    package.json
+        o atributo ("start": "source"), dá o local de inicialização
+
+        o atributo ("watch": "tsc --watch"), será responsável pela compilação do ts em js enquanto o atualizamos(ts): npm run watch
+
+    index.html
+        (<script src="app.js" defer></script>) o defer diz que o script deve ser iniciado após os html
+        
+-------------------------------------
+--------------------
+-------------------------------------
+
+tsconfig.json
+    "target": "es2016". verções echmascript
+
+    "lib": ["es2020", "DOM"]., importa qualquer biblioteca que o backend precisar
+
+    "outDir": "dist".manda as compressões .js do .ts para outra pasta "dist"
+
+    "rootDir": "./src". peega os aquivos .ts na pasta source
+
+    "include": ["./src/**/*.ts"]. inclui pesquisas em source'
+
+    "strictNullChecks": true. onde podemos mecher caso não queiramos nos preocupar com nulos
+    
+    "strict": true,  "noImplicitAny": false, "strictNullChecks": false. configurações a respeito de implicidades no código
