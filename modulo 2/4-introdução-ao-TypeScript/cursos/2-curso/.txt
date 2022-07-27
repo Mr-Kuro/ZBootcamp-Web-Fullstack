@@ -1,0 +1,8 @@
+terminal:
+    npm init:
+        cria um arquivo json de configurações e serve para instalar outras como compiladores.
+
+    npm i parcel-bundler: 
+        instala o compilador "parcel-bundler.
+
+    
