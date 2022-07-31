@@ -1,0 +1,36 @@
+estrutura
+	pasta: e2e
+		realixa testes end-to-end
+
+	pasta: node_modules
+		armazena todas as dependencias e subdependencias dos pacotes(do projeto)
+
+	pasta: src
+		diretório principal, onde criaremos nossos módulos
+
+	arquivo: browselistrc
+		ajusta a saida de css e javascript
+
+	arquivo: editorconfig
+		cuida das configurações do editor de código
+
+	arquivo: gitignore
+		quais arquivos devem ser ignorados pelo git
+
+	arquivo: angular.json
+		arquivo de congurações do angular
+
+	arquivo: karma.conf.js
+		config do framework que o angular utiliza para testes unitarios
+
+	arquivo: package-lock.json
+		lista de dependencias e sub-dependencias da aplicação
+
+	arquivo: package.json
+		configurações das dependencias e scripts do npm
+
+	arquivo: README.md
+		para a documentação da aplicação
+
+	arquivo: ts...
+		arquivos de configurações do typescript
