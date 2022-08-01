@@ -40,4 +40,5 @@ terminal:
 	ng help
 		lista de comnandos e a	juda
 
-	ng build 
+	ng build
+		compila o projeto para o servidor. deploy 

@@ -1,0 +1,6 @@
+terminal
+    npm install bootstrap
+        modelo css defult para o app
+
+    ng g d 'name'
+        gera uma diretiva
