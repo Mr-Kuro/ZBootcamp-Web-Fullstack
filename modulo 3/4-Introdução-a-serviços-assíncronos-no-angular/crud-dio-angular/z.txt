@@ -1,0 +1,6 @@
+Terminal
+    ng g c 'name'
+        gera um componente
+
+    ng g inerface 'name'
+        gera uma interface? 
