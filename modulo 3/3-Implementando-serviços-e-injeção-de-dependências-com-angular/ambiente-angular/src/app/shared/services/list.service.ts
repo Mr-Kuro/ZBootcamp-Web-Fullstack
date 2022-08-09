@@ -5,8 +5,6 @@ import { Observable } from 'rxjs';
 export type ApiResponse = {
   info: {};
   results: {
-    origin:{},
-    location:{},
     
   };
 }
