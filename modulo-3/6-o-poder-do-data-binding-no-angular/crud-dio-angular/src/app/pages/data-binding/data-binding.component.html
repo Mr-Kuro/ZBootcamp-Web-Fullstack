@@ -1,0 +1,22 @@
+<h1 [class.text-red]="textRed">Nome atual: {{ text }}<br>Idade: {{19 + 1}}</h1>
+<h1 [style.fontSize]="fontSize">Antigo nome: {{retornaNome()}}</h1>
+
+<img [style.width.px]="widthImg" [src]="imageUrl" [alt]="imageDesc">
+
+<button (click)="clicou()" (dblclick)="dbClick()">Clique</button>
+<button [attr.aria-Label]="buttonText" [style.backgroundColor]="bgColor">{{ buttonText }}</button>
+
+<input #input type="text" (keyup.enter)="keypressEnter(input.value)">
+
+{{input.value}}
+
+<input [(ngModel)]="textInput" type="text" class="form-control" placeholder="Digite algo..."> 
+<p class="text-default"> {{ textInput }}</p>
+
+
+<app-button [btnText]="'Enviar'" [btnType]="'btn-danger'" (click)="destroyComponent()"></app-button>
+<app-button [btnText]="'Salvar'" [btnType]="'btn-success'"></app-button>
+<app-button btnText="Clique aqui" btnType="btn-primary" (click)="incrementa()"></app-button>
+<app-button btnText="teste" btnType="btn-dark" (clickChildren)="clicouNoFilho($event)"></app-button>
+
+<app-life-cycle [number]="number" *ngIf="!destroy"></app-life-cycle>

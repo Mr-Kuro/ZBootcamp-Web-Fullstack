@@ -1,0 +1,16 @@
+termminal:
+	npm install -g @angular/cli
+		instala o Angular CLI
+
+	ng version
+		para conferir a verção do angular cli instalada
+	
+	ng new course-manager
+		cria um projeto modelo //não ativar o routing pq aionda sou iniciante
+
+	ng serve
+		faz a preparação do app e inicia o servidor local
+
+	npm install bootstrap
+		instala os pacotes do bootstrap
+	
