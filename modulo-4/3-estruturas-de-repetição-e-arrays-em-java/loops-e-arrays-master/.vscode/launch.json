@@ -1,0 +1,154 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex1_OrdemInversa",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.arrays.Ex1_OrdemInversa",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex2_Consoantes",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.arrays.Ex2_Consoantes",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex3_NumerosAleatorios",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.arrays.Ex3_NumerosAleatorios",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex4_ArrayMultidimensional",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.arrays.Ex4_ArrayMultidimensional",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayMultidimensional",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.arrays.comentado.ArrayMultidimensional",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Consoantes",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.arrays.comentado.Consoantes",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch NumerosAleatorios",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.arrays.comentado.NumerosAleatorios",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch OrdemInversa",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.arrays.comentado.OrdemInversa",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex1_NomeEIdade",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.loops.Ex1_NomeEIdade",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex2_Nota",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.loops.Ex2_Nota",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex3_MaiorEMedia",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.loops.Ex3_MaiorEMedia",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex4_ParEImpar",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.loops.Ex4_ParEImpar",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex5_Tabuada",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.loops.Ex5_Tabuada",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex6_Fatorial",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.loops.Ex6_Fatorial",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Fatorial",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.loops.comentado.Fatorial",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaiorEMedia",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.loops.comentado.MaiorEMedia",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch NomeEIdade",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.loops.comentado.NomeEIdade",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Nota",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.loops.comentado.Nota",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch ParEImpar",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.loops.comentado.ParEImpar",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tabuada",
+            "request": "launch",
+            "mainClass": "br.com.dio.exercicios.loops.comentado.Tabuada",
+            "projectName": "loops-e-arrays-master_e85826b9"
+        }
+    ]
+}
