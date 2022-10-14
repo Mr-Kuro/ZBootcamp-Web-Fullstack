@@ -2,12 +2,12 @@ package br.com.dio.exceptions;
 
 public class DivisaoNaoExataException extends Exception{
 
-    private int numerado;
+    private int numerador;
     private int denominador;
 
-    public DivisaoNaoExataException(String message, int numerado, int denominador) {
+    public DivisaoNaoExataException(String message, int numerador, int denominador) {
         super(message);
-        this.numerado = numerado;
+        this.numerador = numerador;
         this.denominador = denominador;
     }
 }

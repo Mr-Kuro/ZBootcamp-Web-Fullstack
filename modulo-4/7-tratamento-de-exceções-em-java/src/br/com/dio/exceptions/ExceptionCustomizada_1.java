@@ -26,8 +26,8 @@ public class ExceptionCustomizada_1 {
             br.close();
         } catch (ImpossivelAberturaDeArquivoException e) {
             JOptionPane.showMessageDialog(null,
-                    e.getMessage());
-            //e.printStackTrace();
+                     e.getMessage());
+            e.printStackTrace();
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(null,
                     "Ocorreu um erro não esperado, por favor, fale com o suporte." + ex.getMessage());
@@ -38,6 +38,14 @@ public class ExceptionCustomizada_1 {
     public static BufferedReader lerArquivo(String nomeDoArquivo) throws ImpossivelAberturaDeArquivoException {
 
         File file = new File(nomeDoArquivo);
+        /*
+        try {
+            return new BufferedReader(new FileReader(nomeDoArquivo));
+        } catch (FileNotFoundException e) {
+            throw new ImpossivelAberturaDeArquivoException(file.getName(), file.getPath());
+        }
+         */
+
         try {
             return new BufferedReader(new FileReader(nomeDoArquivo));
         } catch (FileNotFoundException e) {
@@ -45,7 +53,7 @@ public class ExceptionCustomizada_1 {
         }
     }
 }
-
+/*
 class ImpossivelAberturaDeArquivoException extends Exception {
 
     private String nomeDoArquivo;
@@ -63,9 +71,28 @@ class ImpossivelAberturaDeArquivoException extends Exception {
                 "nomeDoArquivo='" + nomeDoArquivo + '\'' +
                 ", diretorio='" + diretorio + '\'' +
                 '}';
-    }*/
+    }
 
 }
+*/
 
+class ImpossivelAberturaDeArquivoException extends Exception {
+    private String nomeDoArquivo;
+    private String diretorio;
+
+    public ImpossivelAberturaDeArquivoException(String nomeDoArquivo, String diretorio) {
+        super("O arquivo \""+ nomeDoArquivo +"\" não foi encontrado no diretório \""+ diretorio +"\"...");
+        this.nomeDoArquivo = nomeDoArquivo;
+        this.diretorio = diretorio;
+    }
+
+    @Override
+    public String toString() {
+        return "ImpossivelAberturaDeArquivoException{" +
+                "nomeDoArquivo='" + nomeDoArquivo + '\'' +
+                ", diretorio='" + diretorio + '\'' +
+                '}';
+    }
+}
 
 
