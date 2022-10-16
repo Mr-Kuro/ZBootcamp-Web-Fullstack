@@ -12,21 +12,22 @@ import java.util.List;
 public class StartApp implements CommandLineRunner {
     @Autowired
     private UserRepository repository;
+    @Autowired
+    private User user;
 
     @Override
     public void run(String... args) throws Exception {
-        List<User> users = repository.findByNamaContaining("Anderson");
+
+        insertUser();
+        List<User> users = repository.findByNameContaining("Anderson");
         System.out.println(repository.findAll());
         for (User u: users) {
-            System.out.println("\n\n"+u.getNome()+ " = " + u +"\n\n");
+            System.out.println("\n\n"+u.getName()+ " = " + u +"\n\n");
         }
-
     }
 
     public void insertUser(){
-
-        User user = new User();
-        user.setNome("Anderson");
+        user.setName("Anderson");
         user.setUsername("Kuro");
         user.setPassword("dio123");
 

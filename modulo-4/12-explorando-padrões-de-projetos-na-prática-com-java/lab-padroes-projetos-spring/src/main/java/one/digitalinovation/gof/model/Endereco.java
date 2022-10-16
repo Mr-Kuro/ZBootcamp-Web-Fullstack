@@ -26,7 +26,7 @@ public class Endereco {
     private String ibge;
     private String gia;
     private String ddd;
-    private String diafi;
+    private String siafi;
 
     public String getCep() {
         return cep;
@@ -100,11 +100,11 @@ public class Endereco {
         this.ddd = ddd;
     }
 
-    public String getDiafi() {
-        return diafi;
+    public String getSiafi() {
+        return siafi;
     }
 
-    public void setDiafi(String diafi) {
-        this.diafi = diafi;
+    public void setSiafi(String siafi) {
+        this.siafi = siafi;
     }
 }

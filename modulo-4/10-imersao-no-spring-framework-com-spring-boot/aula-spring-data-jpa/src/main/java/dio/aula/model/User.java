@@ -1,27 +1,31 @@
 package dio.aula.model;
 
+import org.springframework.stereotype.Component;
+
 import javax.persistence.*;
 
+
+@Component
 @Entity
 @Table(name = "tab_user")
 public class User {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "user_id")
     private Integer id;
     @Column(length = 50, nullable = false)
-    private String nome;
+    private String name;
     @Column(length = 20, nullable = false)
     private String username;
     @Column(length = 100, nullable = false)
     private  String password;
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getUsername() {
@@ -44,7 +48,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", nome='" + nome + '\'' +
+                ", nome='" + name + '\'' +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';

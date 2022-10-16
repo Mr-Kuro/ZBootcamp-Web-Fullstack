@@ -5,6 +5,7 @@ import one.digitalinovation.gof.model.ClienteRepsitory;
 import one.digitalinovation.gof.model.Endereco;
 import one.digitalinovation.gof.model.EnderecoRepository;
 import one.digitalinovation.gof.service.ClienteService;
+import one.digitalinovation.gof.service.ViaCepService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,8 +27,8 @@ public class ClienteServiceImplement implements ClienteService {
     @Autowired
     private ViaCepService viaCepService;
 
-//    TODO Strategy: Implementar os métodos definifos na interface.
-//    TODO Facadew: Abstraur Integrações com subsistemas, provendo uma interface simples.
+//     Strategy: Implementar os métodos definifos na interface.
+//     Facadew: Abstraur Integrações com subsistemas, provendo uma interface simples.
 
     @Override
     public Iterable<Cliente> buscarTodos() {

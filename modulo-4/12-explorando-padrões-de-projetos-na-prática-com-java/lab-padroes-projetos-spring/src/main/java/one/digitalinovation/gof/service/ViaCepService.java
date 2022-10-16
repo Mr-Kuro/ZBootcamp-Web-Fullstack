@@ -1,4 +1,4 @@
-package one.digitalinovation.gof.service.implement;
+package one.digitalinovation.gof.service;
 
 import one.digitalinovation.gof.model.Endereco;
 import org.springframework.cloud.openfeign.FeignClient;
